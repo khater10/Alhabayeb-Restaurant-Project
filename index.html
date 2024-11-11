@@ -1,0 +1,743 @@
+<html>
+
+    <head>
+        <title>AL-Habayeb</title>
+        <link rel="stylesheet" href="styling/styling.css">
+        <link rel="stylesheet" href="styling/all.css">
+        <meta charset="utf-8">
+        <!-- bootstarp -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    </head>
+
+    <body class="bg-dark" >
+
+    <aside>
+            <ul class="side-icons" style="list-style-type:none;">
+                <li><i class="fa-brands fa-square-facebook text-info"></i></li>
+                <li><i class="fa-brands fa-square-whatsapp text-info"></i></li>
+                <li><i class="fa-brands fa-square-x-twitter text-info"></i></li>
+                <li><i class="fa-brands fa-linkedin text-info"></i></li>
+                <li><i class="fa-brands fa-square-instagram text-info"></i></li>
+            </ul>
+    </aside>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-expand-lg bg-dark fixed-top" style="height: 80px;opacity:1">
+                    <a class="navbar-brand" href="#"><img src="images/another.jpg" alt="logo" style="width:100px; height:60px;"></a>
+                    <p class="nav-link pr-3 ml-3 mt-3 rest-title item1 text-warning" href="#" style="font-size: 20;">AL-Habayeb</p>
+                <button type="button" style="height: 22;" class="navbar-toggle  d-sm-none btn-warning" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar text warning" style="font-weight: 900;"><i class="fa-solid fa-bars  text warning"></i></span>
+                </button>
+            <div class="collapse navbar-collapse bg-dark"  id="myNavbar">
+                <ul class="navbar-nav" id="nav-col">
+                    <li class="nav-item">
+                        <a class="nav-link ml-3 text-white mt-2" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-3 text-white mt-2 mr-3" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown1 text-white border-warning mt-2">
+                            <a class="nav-link ml-3 text-white dropdown-toggle " style="padding-left: 0px;" href="#" id="navbardrop" data-toggle="dropdown">Menu</a>
+                        <div class="dropdown-menu menu" style="background-color: black;">
+                            <a class="dropdown-item text-warning bg-muted" style="font-size: 17; font-weight: 700;" href="#">Grilled</a>
+                            <a class="dropdown-item text-warning" style="font-size: 17; font-weight: 700;" href="#">Shrimp</a>
+                            <a class="dropdown-item text-warning" style="font-size: 17; font-weight: 700;" href="#">Pizza</a>
+                            <a class="dropdown-item text-warning" style="font-size: 17; font-weight: 700;" href="#">Sandwiches</a>
+                            <hr>
+                            <a class="dropdown-item text-warning" style="font-size: 17; font-weight: 700;" href="#">Soups</a>
+                            <a class="dropdown-item text-warning" style="font-size: 17; font-weight: 700;" href="#">Salads</a>
+                            <a class="dropdown-item text-warning" style="font-size: 17; font-weight: 700;" href="#">More..</a>
+                        </div> <!-- dropdown -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white ml-3 mt-2 preview " href="#">Preview</a>
+                    </li>
+                </ul>
+                    <input class="form-control mr-sm-2 input1 mt-2  mr-1 col-lg-3 col-sm"  type="text" placeholder="Search">
+                    <button class="btn btn-info ml-2 mt-2 btn1" type="submit">Search</button>
+                    <button type="submit" class="btn ml-2 mt-2 btn-info btn1 " data-toggle="modal" data-target="#myModal">&nbsp;Login&nbsp;</button>
+                    <div><p></p></div>
+            </div> <!-- collapse -->
+        </nav>
+
+        <div class="container">
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content p-4">
+                            <h3>Login!</h3>
+                        <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" placeholder="Enter email" id="email">
+                        </div> <!-- form group -->
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                        </div> <!-- form group -->
+                        <form>
+                            <div class="custom-control custom-switch">
+                              <input type="checkbox" class="custom-control-input" id="switch1">
+                              <label class="custom-control-label" for="switch1">Remember me</label>
+                            </div>
+                          </form>
+                            <button type="submit" class="btn btn-info" style="width: 75px;">Submit</button>
+                            <button type="button" class="btn btn-info btn2" data-dismiss="modal">Close</button>
+                        </form>
+                    </div> <!-- form group -->
+                    </div> <!-- modal content -->
+                </div> <!-- modal dialog -->
+            </div>  <!-- modal -->
+        </div> <!-- container -->
+    </header> 
+
+    
+
+    <section>
+        <div class="mt-lg-5 container-fluid">
+            <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+                
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                  </ul> 
+                <div class="carousel-inner">
+                    <div class="carousel-item mt-3 active">
+                        <div style="height: 90vh;">
+                            <img class="card-img-top" src="images/khatet.jpeg" alt="Card image">
+                            <div class="card-img-overlay bg-dark">
+                                <h1 class="card-title text-white">Grilled</h1>
+                                <p class="card-text text-white" style="font-weight: 700;">Chicken tikka - Kofta - Kebbab - Hawashi ---- etc.</p>
+                                <button href="#" class="btn btn-dark text-warning pt-0" style="font-weight: 700;">Take a round</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item mt-3">
+                        <div>
+                            <img class="card-img-top" src="images/7amoud.jpeg" alt="Card image">
+                            <div class="card-img-overlay bg-dark">
+                                <h1 class="card-title text-white">Shrimp</h1>
+                                <p class="card-text text-white" style="font-weight: 700;">Fried - Grilled - Soups - Sandwiches ---- etc.</p>
+                                <button href="#" class="btn btn-dark text-warning pt-0" style="font-weight: 700;">Take a round</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item mt-3">
+                        <div>
+                            <img class="card-img-top" src="images/1360x1632.jpg" alt="Card image">
+                            <div class="card-img-overlay bg-dark">
+                                <h1 class="card-title text-white">Pizza</h1>
+                                <p class="card-text text-white" style="font-weight: 700;">Neapolitana - American - Egyptian feteer - Cheese lovers ---- etc.</p>
+                                <button href="#" class="btn btn-dark text-warning pt-0" style="font-weight: 700;">Take a round</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item mt-3">
+                        <div>
+                            <img class="card-img-top" src="images/creative-creativity-thinking-invention-concept-H92TA5.jpg" alt="Card image">
+                            <div class="card-img-overlay bg-dark">
+                                <h1 class="card-title text-white">Sandwiches</h1>
+                                <p class="card-text text-white" style="font-weight: 700;">Beef Burger - Chicken burger - Hot dog - Shawerma ---- etc.</p>
+                                <button href="#" class="btn btn-dark text-warning pt-0" style="font-weight: 700;">Take a round</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#cardCarousel" role="button" data-slide="prev">
+                    <i class="fa-solid fa-angles-left text-warning fs-10 font col-sm-3 pr-1"></i>
+                    <!-- <span class="carousel-control-prev-icon icon-carousel text-warning" aria-hidden="true"></span> -->
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#cardCarousel" role="button" data-slide="next">
+                    <i class="fa-solid fa-angles-right text-warning fs-10 font col-sm-3 pr-1"></i>
+                    <!-- <span class="carousel-control-next-icon icon-carousel text-info fd-5" aria-hidden="true"></span> -->
+                    <span class="sr-only">Next</span>
+                </a>
+            </div> <!-- carousel -->
+        </div> <!-- container fluid -->
+    </section>
+<section>
+    <div class="sec-2 m-auto p-2">
+        <h2 class="text-warning pl-5 pb-3 pt-4">Welcome</h2>
+        <p class="pl-4 pr-5 text-white mb-3" style="font-size: 18;">Are you planning to visit Egypt? We offer the best experience food of the middle east,We will take care of all you need and you will test the best taste,so don't dismiss this chance my dear.</p>
+        <button class="btn-info sec2-btn ml-4">Learn More</button>
+    </div>
+</section>
+<hr>
+<section>
+    <div class="container-fluid sec3">
+        <div id="accordion">
+            
+            <!-- Panel 1 (MOLOKHIA) -->
+            <div class="card mb-3 bar1">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0 d-flex justify-content-between align-items-center" style="height: 30px;">
+                        <a class="card-link text-warning" data-toggle="collapse" href="#collapseOne">
+                            MOLOKHIA
+                        </a>
+                        <button class="btn btn-link text-warning">
+                            <span class="arrow">&#9660;</span> <!-- Down Arrow -->
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body text-white bg-dark">
+                        Molokhia is an iconic Egyptian soup made of jute mallow leaves from which the dish gets its name. Those leaves are cooked in a rich chicken broth and flavored.
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Panel 2 (NEAPOLITAN PIZZA) -->
+            <div class="card bar1 mb-3">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0 d-flex justify-content-between align-items-center" style="height: 30px;">
+                        <a class="card-link text-warning" data-toggle="collapse" href="#collapseTwo">
+                            NEAPOLITAN PIZZA
+                        </a>
+                        <button class="btn btn-link text-warning" style="text-decoration: none;">
+                            <span class="arrow">&#9660;</span> <!-- Down Arrow -->
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body text-white bg-dark">
+                        Neapolitan pizza, or pizza Napoletana, is a type of pizza that originated in Naples, Italy. This style of pizza is prepared with simple and fresh ingredients: a basic dough, raw tomatoes, fresh mozzarella cheese, fresh basil, and olive oil. No fancy toppings are allowed!
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Panel 3 (HAWAWSHI) -->
+            <div class="card bar1 mb-3">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0 d-flex justify-content-between align-items-center" style="height: 30px;">
+                        <a class="card-link text-warning" data-toggle="collapse" href="#collapseThree">
+                            HAWAWSHI
+                        </a>
+                        <button class="btn btn-link text-warning">
+                            <span class="arrow">&#9660;</span> <!-- Down Arrow -->
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body text-white bg-dark">
+                        Hawawshi is a popular Egyptian street food, particularly in Cairo and Alexandria (where they call it baladi). It is basically dough (or pita) stuffed with a mixture of ground beef that is seasoned with tantalizing warm spices, onions, garlic, hot peppers, and fresh herbs.
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    </section>
+<hr>
+<section>
+    <div class="container-fluid">
+        <div class="well well-lg head-sec3" >
+            <h2 style="text-align: center;" class="text-white">Translate from English to Arabic.</h2>
+        </div>
+        <div class="sec-2 sec-4 p-4">
+            <h3 style="display: inline; " class="text-white">Write and translate</h3>
+            <h4 style="display: inline;cursor:pointer" style="font-size: 25;" class="text-warning">Press Here</h4>
+            <div style="width: 60px; height:40px" class="both" data-toggle="popover" data-content="Copied" data-trigger="focus" type="button" href="#" data-placement="right">
+            <button id="mybButton" class="btn-info text-white rounded mt-2" data-toggle="popover" data-content="Copy to clipboard" data-trigger="hover" type="button" href="#" data-placement="right" >Copy</button></div>
+            <br>
+            <div><textarea class="col-lg rounded"  style="display: block;" placeholder="translate" rows="5"></textarea></div>
+        </div>
+    </div>
+    <hr>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="well well-lg head-sec3" >
+            <h2 style="text-align: center;" class="text-white">Translate from German to Arabic.</h2>
+        </div>
+        <div class="sec-2 sec-4 p-4">
+            <h3 style="display: inline;" class="text-white">Write and translate</h3>
+            <h4 style="display: inline;cursor:pointer" style="font-size: 25;" class="text-warning">Press Here</h4>
+            <div style="width: 60px;" class="both" data-toggle="popover" data-content="Copied" data-trigger="focus" type="button" href="#" data-placement="right">
+            <button id="mybButton" class="btn-info text-white rounded copy mt-2" data-toggle="popover" data-content="Copy to clipboard" data-trigger="hover" type="button" href="#" data-placement="right" >Copy</button></div>
+            <br>
+            <textarea class="col-lg rounded"  style="display: block;" placeholder="translate" rows="5"></textarea>
+        </div>
+    </div>
+    <hr>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="well well-lg head-sec3" >
+            <h2 style="text-align: center;" class="text-white">Translate from French to Arabic.</h2>
+        </div>
+        <div class="sec-2 sec-4 p-4">
+            <h3 style="display: inline;" class="text-white">Write and translate</h3>
+            <h4 style="display: inline;cursor:pointer" style="font-size: 25;" class="text-warning">Press Here</h4>
+            <div style="width: 60px;" class="both" data-toggle="popover" data-content="Copied" data-trigger="focus" type="button" href="#" data-placement="right">
+            <button id="mybButton" class="btn-info text-white rounded copy mt-2" data-toggle="popover" data-content="Copy to clipboard" data-trigger="hover" type="button" href="#" data-placement="right" >Copy</button></div>
+            <br>
+            <textarea class="col-lg rounded"  style="display: block;" placeholder="translate" rows="5"></textarea>
+        </div>
+    </div>
+    <hr>
+</section>
+<section>
+    <div class="container-fluid popular">
+        <div class="parent-sec6 m-auto">
+          <div class="overlay-sec6 m-auto sec-2 sec-4 p-4 col-lg"></div> <!-- overlay -->
+        </div> <!-- parent -->
+        <div class="well well-lg head-sec3" >
+            <h1 style="text-align: center;" class=" linear">POPULAR &nbsp; FOOD &nbsp; IN EGYPT</h1>
+    </div> <!-- sec6 -->
+<br><br>
+    <div class="container-fluid sec-7 row row-cols-1 row-cols-sm-2 row-cols-md-3 d-flex justify-content-center m-auto" >
+        <!-- Card 1 -->
+        <div class="col mb-5">
+            <div class="card-after card" style="background-color:  rgba(50, 83, 104, 0.63); max-width: 380px;" >
+                <img class="card-img-top img-top pl-3 pr-3" src="images/7usa.jpeg" alt="Card image" style="width: 100%;  max-height:400px">
+                <div class="card-body">
+                    <div class="card-cont d-flex justify-content-between">
+                        <h2 style="display: inline;" class="card-title text-white">Koshari</h2>
+                        <button class="btn btn-primary text-white" style="font-weight: 700;">Show Recipe</button>
+                    </div>
+                    <p class="card-text text-warning">Popular Dish</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col mb-5 ">
+            <div class="card-after card" style="background-color:  rgba(50, 83, 104, 0.63); max-width: 380px;" >
+                <img class="card-img-top img-top pl-3 pr-3" src="images/طريقة_عمل_طشة_الملوخية.jpg" alt="Card image" style="width:100%;  max-height:400px">
+                <div class="card-body">
+                    <div class="card-cont d-flex justify-content-between">
+                        <h2 style="display: inline;" class="card-title text-white">Molokhia</h2>
+                        <button class="btn btn-primary text-white" style="font-weight: 700;">Show Recipe</button>
+                    </div>
+                    <p class="card-text text-warning">Popular Dish</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col mb-5">
+            <div class="card-after card"style="background-color:  rgba(50, 83, 104, 0.63); max-width: 380px;">
+                <img class="card-img-top img-top pl-3 pr-3" src="images/images.jpg" alt="Card image" style="width:100%;  max-height:400px; min-height:400">
+                <div class="card-body">
+                    <div class="card-cont d-flex justify-content-between">
+                        <h2 style="display: inline;" class="card-title text-white">Mahshi</h2>
+                        <button class="btn btn-primary text-white" style="font-weight: 700;">Show Recipe</button>
+                    </div>
+                    <p class="card-text text-warning">Popular Dish</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col mb-5">
+            <div class="card-after card" style="background-color:  rgba(50, 83, 104, 0.63); max-width: 380px;">
+                <img class="card-img-top img-top pl-3 pr-3" src="images/2df1b236-a63d-4b5a-a2f1-cf2fb11ef129.jpg" alt="Card image" style="width:100% ; max-height:400px; min-height:400">
+                <div class="card-body">
+                    <div class="card-contd-flex justify-content-between">
+                        <h2 style="display: inline;" class="card-title text-white">Hawawshi</h2>
+                        <button class="btn btn-primary text-white" style="font-weight: 700;">Show Recipe</button>
+                    </div>
+                    <p class="card-text text-warning">Popular Dish</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col mb-5">
+            <div class="card-after card" style="background-color:  rgba(50, 83, 104, 0.63); max-width: 380px;">
+                <img class="card-img-top img-top pl-3 pr-3" src="images/th (1).jpeg" alt="Card image" style="width:100% ; max-height:400px; min-height:400">
+                <div class="card-body">
+                    <div class="card-cont d-flex justify-content-between">
+                        <h2 style="display: inline;" class="card-title text-white">Mombar</h2>
+                        <button class="btn btn-primary text-white" style="font-weight: 700;">Show Recipe</button>
+                    </div>
+                    <p class="card-text text-warning">Popular Dish</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col mb-5 " >
+            <div class="card-after card" style="background-color:  rgba(50, 83, 104, 0.63); max-width: 380px;">
+                <img class="card-img-top img-top pl-3 pr-3" src="images/th (2).jpeg" alt="Card image" style="width:100% ; max-height:400px; min-height:400">
+                <div class="card-body">
+                    <div class="card-cont d-flex justify-content-between">
+                        <h2 style="display: inline;" class="card-title text-white">Kofta</h2>
+                        <button class="btn btn-primary text-white" style="font-weight: 700;">Show Recipe</button>
+                    </div>
+                        <p class="card-text text-warning">Popular Dish</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container sec-8 row justify-content-center m-auto">
+        <div class="col-12 col-md-6 mb-5">
+          <div class="card-after card" style="background-color: rgba(50, 83, 104, 0.63); max-width: 380px;">
+            <img class="card-img-top img-top pl-3 pr-3" src="images/th (3).jpeg" alt="Card image" style="width:100%; max-height:400px; min-height:400px;">
+            <div class="card-body">
+              <div class="card-cont d-flex justify-content-between">
+                <h2 class="card-title text-white">Pammya</h2>
+                <button class="btn btn-primary text-white" style="font-weight: 700;">Show Recipe</button>
+              </div>
+              <p class="card-text text-warning">Popular Dish</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-5">
+          <div class="card-after card" style="background-color: rgba(50, 83, 104, 0.63); max-width: 380px;">
+            <img class="card-img-top img-top pl-3 pr-3" src="images/th.jpeg" alt="Card image" style="width:100%; max-height:400px; min-height:400px;">
+            <div class="card-body">
+              <div class="card-cont d-flex justify-content-between">
+                <h2 class="card-title text-white">Hamam freek</h2>
+                <button class="btn btn-primary text-white" style="font-weight: 700;">Show Recipe</button>
+              </div>
+              <p class="card-text text-warning">Popular Dish</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<section>
+        <div class="container-fluid popular">
+        <div class="parent-sec9">
+            <div class="overlay-sec6 sec-2 sec-4 p-4 col-lg">
+            </div> <!-- overlay -->
+        </div> <!-- parent -->            
+        <hr>
+        <br><br>
+        <div class="well-sm well  head-sec3"  style="padding:0 25;">
+            <h1 style="text-align: center; height: 70px;padding-top: 10;" class=" linear">THANKS &nbsp; FOR</h1>
+    </div> <!-- sec6 -->
+</section>
+<br><br>
+<section>
+    <div  class="container-fluid  row row-cols-1 row-cols-sm-2 row-cols-md-3 d-flex justify-content-center m-auto">
+        <!-- Card 1 -->
+        <div class="col mb-5">
+            <div class="card img-fluid rounded-4 card-1-sec10" style="max-width: 350px; position: relative; overflow: hidden;">
+                <div class="overlay-img-container">
+                    <!-- Image with overlay -->
+                    <img class="card-img-top img-rounded" src="images/khatet (2).jpeg" alt="Card image" style="width:100%; max-height:400px; min-height:400px;">
+                    <div class="overlay"></div> <!-- Overlay for the image -->
+                </div>
+                <div class="card-body-sec10" style="position: absolute; bottom: 10px; left: 10px; right: 10px; z-index: 2;">
+                    <div class="cont-sec10">
+                        <h4 class="card-title text-white">All thanks and appreciation</h4>
+                        <span class="text-warning" style="font-weight: 700;">
+                            <i class="fa-regular fa-clock"></i> December 31, 2001
+                        </span>
+                    </div>
+                    <div class="card-cont-sec10-2">
+                        <img class="rounded-circle" src="images/khatet (2).jpeg" style="max-width: 100px; max-height: 100px;">
+                        <p class="text-white" style="font-weight: 600;">Mr / Omar Mohamed Khater <br>Development Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col mb-5">
+            <div class="card card-1-sec10" style="max-width: 350px; position: relative; overflow: hidden;">
+                <div class="overlay-img-container">
+                    <!-- Image with overlay -->
+                    <img class="card-img-top img-rounded" src="images/7usa (2).jpeg" alt="Card image" style="width:100%; max-height:400px; min-height:400px;">
+                    <div class="overlay"></div> <!-- Overlay for the image -->
+                </div>
+                <div class="card-body-sec10" style="position: absolute; bottom: 10px; left: 10px; right: 10px; z-index: 2;">
+                    <div class="cont-sec10">
+                        <h4 class="card-title text-white">All thanks and appreciation</h4>
+                        <span class="text-warning" style="font-weight: 700;">
+                            <i class="fa-regular fa-clock"></i> April 12, 1999
+                        </span>
+                    </div>
+                    <div class="card-cont-sec10-2">
+                        <img class="rounded-circle" src="images/7usa (2).jpeg" style="max-width: 100px; max-height: 100px;">
+                        <p class="text-white" style="font-weight: 600;">Mr / Abdelrahmen Mahrous Thabet <br>Training Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col mb-5">
+            <div class="card card-1-sec10" style="max-width: 350px; position: relative; overflow: hidden;">
+                <div class="overlay-img-container">
+                    <!-- Image with overlay -->
+                    <img class="card-img-top img-rounded" src="images/7amoud (2).jpeg" alt="Card image" style="width:100%; max-height:400px; min-height:400px;">
+                    <div class="overlay"></div> <!-- Overlay for the image -->
+                </div>
+                <div class="card-body-sec10" style="position: absolute; bottom: 10px; left: 10px; right: 10px; z-index: 2;">
+                    <div class="cont-sec10">
+                        <h4 class="card-title text-white">All thanks and appreciation</h4>
+                        <span class="text-warning" style="font-weight: 700;">
+                            <i class="fa-regular fa-clock"></i> July 1, 1999
+                        </span>
+                    </div>
+                    <div class="card-cont-sec10-2">
+                        <img class="rounded-circle" src="images/7amoud (2).jpeg" style="max-width: 100px; max-height: 100px;">
+                        <p class="text-white" style="font-weight: 600;">Mr / Ahmed Hisham Saad <br> HR Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col mb-5 card-sec10">
+            <div class="card img-fluid rounded-4 card-1-sec10" style="max-width: 350px; position: relative; overflow: hidden;">
+                <div class="overlay-img-container">
+                    <!-- Image with overlay -->
+                    <img class="card-img-top img-rounded" src="images/mido.jpeg" alt="Card image" style="width:100%; max-height:400px; min-height:400px;">
+                    <div class="overlay"></div> <!-- Overlay for the image -->
+                </div>
+                <div class="card-body-sec10" style="position: absolute; bottom: 10px; left: 10px; right: 10px; z-index: 2;">
+                    <div class="cont-sec10">
+                        <h4 class="card-title text-white">All thanks and appreciation</h4>
+                        <span class="text-warning" style="font-weight: 700;">
+                            <i class="fa-regular fa-clock"></i> August 15, 1998
+                        </span>
+                    </div>
+                    <div class="card-cont-sec10-2">
+                        <img class="rounded-circle" src="images/mido.jpeg" style="max-width: 100px; max-height: 100px;">
+                        <p class="text-white" style="font-weight: 600;">Mr / Mohamed Magdy Elsayed <br> Marketing Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col mb-5">
+            <div class="card card-1-sec10" style="max-width: 350px; position: relative; overflow: hidden;">
+                <div class="overlay-img-container">
+                    <!-- Image with overlay -->
+                    <img class="card-img-top img-rounded" src="images/g3br.jpeg" alt="Card image" style="width:100%; max-height:400px; min-height:400px;">
+                    <div class="overlay"></div> <!-- Overlay for the image -->
+                </div>
+                <div class="card-body-sec10" style="position: absolute; bottom: 10px; left: 10px; right: 10px; z-index: 2;">
+                    <div class="cont-sec10">
+                        <h4 class="card-title text-white">All thanks and appreciation</h4>
+                        <span class="text-warning" style="font-weight: 700;">
+                            <i class="fa-regular fa-clock"></i> February 1, 2001
+                        </span>
+                    </div>
+                    <div class="card-cont-sec10-2">
+                        <img class="rounded-circle" src="images/g3br.jpeg" style="max-width: 100px; max-height: 100px;">
+                        <p class="text-white" style="font-weight: 600;">Mr / Mahmoud Mohamed Gaber <br> Accounting Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col mb-5">
+            <div class="card card-1-sec10" style="max-width: 350px; position: relative; overflow: hidden;">
+                <div class="overlay-img-container">
+                    <!-- Image with overlay -->
+                    <img class="card-img-top img-rounded" src="images/koty.jpeg" alt="Card image" style="width:100%; max-height:400px; min-height:400px;">
+                    <div class="overlay"></div> <!-- Overlay for the image -->
+                </div>
+                <div class="card-body-sec10" style="position: absolute; bottom: 10px; left: 10px; right: 10px; z-index: 2;">
+                    <div class="cont-sec10">
+                        <h4 class="card-title text-white">All thanks and appreciation</h4>
+                        <span class="text-warning" style="font-weight: 700;">
+                            <i class="fa-regular fa-clock"></i> June 19, 2000
+                        </span>
+                    </div>
+                    <div class="card-cont-sec10-2">
+                        <img class="rounded-circle" src="images/koty.jpeg" style="max-width: 100px; max-height: 100px;">
+                        <p class="text-white" style="font-weight: 600;">Mr / Youssef Ashraf Nasr-Eldin <br> Sales Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <br><hr><br>
+<section>
+    <div class="container-fluid"><h1 class=" linear" style="text-align: center;">MEALS HISTORY</h1></div>
+</section> 
+<section>   
+    <div class="container my-5">
+        <div class="card card-sec11 bg-secondary">
+            <div class="row no-gutters">
+                <!-- Content Section (Left Side) -->
+                <div class="col-md-8 order-2 order-md-1">
+                    <div class="card-body">
+                        <h2 class="card-title text-warning mt-4">KOSHARI</h2>
+                        <span style="padding-bottom:5px; font-size:15px" class="span-card mb-5"><i class="fa-solid fa-calendar-days"></i> Fri, Nov 27th 2020</span>
+                        <hr class="bg-warning mt-1 ml-0">
+                        <p class="card-text text-white mt-2 mb-5">Actually, the word "Koshari" is derived from the Hindu word "khichri," which designates a rice and lentil dish. This dish was cheap and filling, and it was brought to Egypt by the British when they arrived in the late 1800s. It didn't take long for the Egyptian populace to warmly accept the meal.</p>
+                        <button class="bg-dark btn text-white" style="width:100;" type="button"><i class="fa-solid fa-podcast text-warning"></i> Podcast</button>
+                        <button class="bg-dark btn text-white" style="width:100;" type="button"><i class="fa-solid fa-clock text-warning"></i> 55 min</button>
+                        <button class="btn-dark btn text-white btn-play" style="width:150;" type="button"><i class="fa-solid fa-play text-warning"></i> Play Episode</button>
+                    </div>
+                </div>
+                <!-- Image Section (Right Side) -->
+                <div class="col-md-4 order-1 order-md-2">
+                    <img src="images/2496892_0.jpg" class="card-img secret" alt="Card Image" style="min-height: 325px;">
+                </div>
+            </div>
+        </div>
+    </div>   
+</section>
+<section>
+      <div class="container my-5 ">
+        <div class="card card-sec11 bg-secondary">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+            <!-- (left Side) -->
+                <img src="images/mloukhiye.jpg" class="card-img secret2" alt="Card Image" style="min-height: 325;">
+              </div>
+            <!-- Content Section (right Side) -->
+            <div class="col-md-8 order-2 order-md-1">
+              <div class="card-body">
+                    <h2 class="card-title text-warning mt-4">MOLOKHIA</h2>
+                    <span style=" padding-bottom:5px;font-size:15px " class="span-card mb-5" ><i class="fa-solid fa-calendar-days"></i>Sat, Jun 2nd 2021</span>
+                    <hr class="bg-warning mt-1 ml-0">
+                    <p class="card-text text-white mt-2 mb-5">One tale explains that when the Hyksos tribe invaded Egypt 3600 years ago, they forced the Egyptians to eat molokhia, thinking it was poisonous. The Egyptians not only survived, but thrived after eating the plant, finally wrestling their country of Egypt back 100 years later from the Hyksos.</p>
+                    <button class="bg-dark btn text-white " style=" width:100 ; " type="button"><i class="fa-solid fa-podcast text-warning"></i> Podcast</button>
+                    <button class="bg-dark btn text-white " style=" width:120 ; " type="button"><i class="fa-solid fa-clock text-warning"></i> 1h 5min</button>
+                    <button class="btn-dark btn text-white btn-play" style="width:150;" type="button"><i class="fa-solid fa-play text-warning"></i> Play Episode</button>
+                    <p></p>
+                </div>
+            </div>           
+          </div>
+        </div>
+      </div>
+</section>
+<section>
+      <div class="container my-5 ">
+        <div class="card card-sec11 bg-secondary">
+          <div class="row no-gutters">
+            <!-- (Left Side) -->
+            <div class="col-md-8 order-2 order-md-1">
+              <div class="card-body">
+                <h2 class="card-title text-warning mt-4">HAMAM MAHSHI</h2>
+                <span style=" padding-bottom:5px;font-size:15px " class="span-card mb-5" ><i class="fa-solid fa-calendar-days"></i>Sun, Aug 15th 2022</span>
+                <hr class="bg-warning mt-1 ml-0">
+                <p class="card-text mt-2 text-white mb-4">The origins of Hamam Mahshi can be traced back to the time of the Pharaohs, when pigeons were considered a delicacy and were often prepared for feasts and special occasions. Today, Hamam Mahshi remains a beloved and iconic dish of Egyptian cuisine, and is enjoyed by locals and visitors alike.</p>
+                <button class="bg-dark btn text-white " style=" width:100 ; " type="button"><i class="fa-solid fa-podcast text-warning"></i> Podcast</button>
+                <button class="bg-dark btn text-white " style=" width:100 ; " type="button"><i class="fa-solid fa-clock text-warning"></i> 42 min</button>
+                <button class="btn-dark btn text-white btn-play" style="width:150;" type="button"><i class="fa-solid fa-play text-warning"></i> Play Episode</button>
+                <p></p>
+            </div>
+            </div>
+            <!--(Right Side) -->
+            <div class="col-md-4 order-1 order-md-2">
+              <img src="images/hamam-mahshi-800x450.jpg" class="card-img secret" alt="Card Image" style="min-height: 325;">
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+      <div class="container my-5 ">
+        <div class="card card-sec11 bg-secondary">
+          <div class="row no-gutters">
+            <!-- (left Side) -->
+            <div class="col-md-4">
+                <img src="images/Egyptian-Macarona-Bechamel-Featured.jpg" class="card-img secret2" alt="Card Image" style="min-height: 325;">
+            </div>
+            <!--(right Side) -->
+            <div class="col-md-8">
+              <div class="card-body">
+                    <h2 class="card-title text-warning mt-4">MACARONA BECHAMEL</h2>
+                    <span style=" padding-bottom:5px;font-size:15px " class="span-card mb-5" ><i class="fa-solid fa-calendar-days"></i>Mon, May 25th 2024</span>
+                    <hr class="bg-warning mt-1 ml-0">
+                    <p class="card-text mt-2 text-white mb-5">This fusion dish was the product of sheer diversity in Egypt. It was organically created by local Egyptians, Italians, and Greek expats who lived and thrived in Egypt until the mid of the 20th century, thanks to quite a tolerant royal regime, back then.</p>
+                    <button class="bg-dark btn text-white " style=" width:100 ; " type="button"><i class="fa-solid fa-podcast text-warning"></i> Podcast</button>
+                    <button class="bg-dark btn text-white " style=" width:100 ; " type="button"><i class="fa-solid fa-clock text-warning"></i> 28 min</button>
+                    <button class="btn-dark btn text-white btn-play" style="width:150;" type="button"><i class="fa-solid fa-play text-warning"></i> Play Episode</button>
+                </div>
+            </div>           
+          </div>
+        </div>
+      </div>
+</section>
+<br>
+<section>
+    <div class="container-fluid"><h1 class=" linear" style="text-align: center;">JOIN US</h1></div>
+        <div class="container">
+            <div class="row col-sm col-md-6 col-lg-12 my-5">
+            <!-- First Card -->
+            <div class="col-lg-3  col-md-6 mb-4 ">
+                <div class="card bg-secondary  card-sec12 " style="max-width: 300; max-height:300">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-warning">Follow Page</h3>
+                        <div class="text-center"><i class="fa-brands fa-square-instagram link-icon"></i></div>
+                        <a href="#" style="text-decoration: none;"><h5 class="text-center text-white mt-3 ">Go To Link</h5></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="col-lg-3 col-md-6 mb-4 ">
+                <div class="card bg-secondary  card-sec12 " style="max-width: 300; max-height:300">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-warning">Send MSG</h3>
+                        <div class="text-center"><i class="fa-brands fa-square-whatsapp link-icon text-success"></i></div>
+                        <a href="#" style="text-decoration: none;"><h5 class="text-center text-white mt-3 ">Go To Link</h5></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-lg-3 col-md-6 mb-4 ">
+                <div class="card bg-secondary card-sec12 " style="max-width: 300; max-height:300">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-warning">Subscribe</h3>
+                        <div class="text-center" style="color: red;"><i class="fa-brands fa-youtube link-icon"></i></div>
+                        <a href="#" style="text-decoration: none;"><h5 class="text-center text-white mt-3 ">Go To Link</h5></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fourth Card -->
+            <div class="col-lg-3 col-md-6 mb-4 ">
+                <div class="card bg-secondary  card-sec12 " style="max-width: 300; max-height:300">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-warning">Visit Us</h3>
+                        <div class="text-center"><i class="fa-brands fa-linkedin link-icon text-primary "></i></div>
+                        <a href="#" style="text-decoration: none;"><h5 class="text-center text-white mt-3 ">Go To Link</h5></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<footer >
+    <div class="footer container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-3 d-flex justify-content-center m-auto" >
+        <div class="container pt-3 col" style="max-height: 300;">
+            <hr>
+            <img src="images/another - Copy.jpg" alt="" class="rounded-circle ml-5" style="max-height: 80px; max-width:80px" >
+            <span class="pl-3 text-warning" style="font-size: 25;">Best Taste</span>
+            <hr>
+            <p class="ml-5 text-white" style="font-size: 18;">TEL : 0112454878</p>
+            <p class="ml-5 text-white" style="font-size: 18;">Address: Cairo,Egypt </p>
+            <p class="ml-5 text-white" style="font-size: 18;">Fax: 000 20258</p>
+        </div>
+        <div class="container pt-3 col" style="max-height: 300;">
+            <hr>
+            <img src="images/another - Copy.jpg" alt="" class="rounded-circle ml-5" style="max-height: 80px; max-width:80px" >
+            <span class="pl-3 text-warning "style="font-size: 25;">Important Links</span>
+            <hr>
+            <p class="ml-5 text-white" style="font-size: 18;"><a href="#" class="linear" style="text-decoration: none;">Visit Us</a></p>
+            <p class="ml-5 text-white" style="font-size: 18;"><a href="#" class="linear" style="text-decoration: none;">Take alook</a></p>
+            <p class="ml-5 text-white" style="font-size: 18;"><a href="#" class="linear" style="text-decoration: none;">Your health is more important</a></p>
+        </div>
+        <div class="container pt-3 col" style="max-height: 300;">
+            <hr>
+            <img src="images/another - Copy.jpg" alt="" class="rounded-circle ml-5" style="max-height: 80px; max-width:80px" >
+            <span class="pl-3 text-warning"style="font-size: 25;">Vision</span>
+            <hr>
+            <p class="ml-5 text-white" style="font-size: 18;">Provide best services</p>
+            <p class="ml-5 text-white" style="font-size: 18;">You will be much better than earlier</p>
+            <p class="ml-5 text-white" style="font-size: 18;">Feedback</p>
+        </div>
+        <div class="container-fluid rights pb-5 col-lg-12">
+            <hr class="container">
+            <h1 class="linear well well-lg bg-dark " style="font-size: 30px;">COPYRIGHT&copy; 2024 OMAR MOHAMED KHATER, AL-HABAYEB RESTAURANT ALL RIGHTS.</h1>
+            <hr class="container ">
+        </div>
+    </div>
+</footer>
+
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- link with js file -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
